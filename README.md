@@ -20,6 +20,8 @@ $ npm run docs
 
 ## Usage 
 
+The API surface area of this library is intentionally small, the parser has one function called `parseStatistics` that accepts a statistics blob and returns a formatted result.
+
 ```js
 import parser from 'mssql-stats-parser'
 
@@ -28,7 +30,7 @@ let statsSummary = parser.parseStatistics(statsText)
 console.log(statsSummary)
 ```
 
-This will output a `StatsSummary` object with the following information:
+This will output a `StatsSummary` object with the following information. It includes rolled up summary aggregations of the stats/IO data as well as the details to identify the biggest offenders.
 
 ```js
 StatsSummary {
