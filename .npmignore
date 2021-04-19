@@ -2,6 +2,9 @@
 lib
 tests
 docs
+.github
+.travis
+README.md
 
 # Logs
 logs
