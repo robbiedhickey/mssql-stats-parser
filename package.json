@@ -1,6 +1,6 @@
 {
   "name": "@robbiedhickey/mssql-stats-parser",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Utility library that returns structured data from MSSQL statistics/IO output",
   "author": "Robbie Hickey @robbiedhickey",
   "main": "dist/index.js",
