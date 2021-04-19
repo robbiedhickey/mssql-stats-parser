@@ -1,6 +1,6 @@
 import { describe, it } from 'mocha'
 import { expect } from 'chai'
-import { parser } from '../lib/parser'
+import parser from '../lib/parser'
 const descriptor = require('../lib/descriptor.json')
 
 describe('parser', function () {

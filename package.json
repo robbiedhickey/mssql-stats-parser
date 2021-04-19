@@ -73,8 +73,5 @@
     "rollup": "^2.45.1",
     "snazzy": "^9.0.0",
     "standard": "^16.0.3"
-  },
-  "dependencies": {
-    "numeral": "^2.0.6"
   }
 }
