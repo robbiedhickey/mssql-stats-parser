@@ -2,7 +2,7 @@ import { describe, it } from 'mocha'
 import { expect } from 'chai'
 import { determineRowType, processTimeRow, processIORow } from '../lib/processors'
 import RowEnum from '../lib/model/RowEnum'
-const descriptor = require('../lib/descriptor.json')
+import descriptor from '../lib/descriptor'
 
 describe('Row Processors', function () {
   describe('determineRowType()', function () {

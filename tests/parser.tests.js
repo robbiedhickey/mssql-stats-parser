@@ -1,7 +1,7 @@
 import { describe, it } from 'mocha'
 import { expect } from 'chai'
 import parser from '../lib/parser'
-const descriptor = require('../lib/descriptor.json')
+import descriptor from '../lib/descriptor'
 
 describe('parser', function () {
   it('contains a properly formed stats descriptor', function () {
