@@ -1,7 +1,8 @@
 {
-  "name": "mssql-stats-parser",
+  "name": "@robbiedhickey/mssql-stats-parser",
   "version": "1.0.0",
   "description": "Utility library that returns structured data from MSSQL statistics/IO output",
+  "author": "Robbie Hickey @robbiedhickey",
   "main": "dist/index.js",
   "scripts": {
     "lint": "standard | snazzy",
@@ -51,7 +52,6 @@
     "great",
     "swag"
   ],
-  "author": "Jan Küster",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/robbiedhickey/mssql-stats-parser/issues"
