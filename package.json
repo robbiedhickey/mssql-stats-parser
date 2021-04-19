@@ -47,10 +47,9 @@
     "url": "git+ssh://git@github.com/robbiedhickey/mssql-stats-parser.git"
   },
   "keywords": [
-    "awesome",
-    "cool",
-    "great",
-    "swag"
+    "mssql",
+    "sql",
+    "statistics"
   ],
   "license": "MIT",
   "bugs": {
