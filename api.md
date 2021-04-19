@@ -18,6 +18,9 @@
 <dt><a href="#processIORow">processIORow(row, descriptor)</a> ⇒ <code>StatsIOInfo</code></dt>
 <dd><p>Processes statistics IO data for a table row</p>
 </dd>
+<dt><a href="#calculateIOTotals">calculateIOTotals(statInfos)</a> ⇒ <code>StatsInfoTotal</code></dt>
+<dd><p>Aggregates and summarizes parsed IO statistics</p>
+</dd>
 </dl>
 
 <a name="MssqlStatsParser"></a>
@@ -26,11 +29,6 @@
 SQL Statistics Parser, outputs structured IO/TIME statistics data
 
 **Kind**: global class  
-
-* [MssqlStatsParser](#MssqlStatsParser)
-    * [.parseStatistics(statisticsText)](#MssqlStatsParser+parseStatistics) ⇒ <code>StatsSummary</code>
-    * [.calculateIOTotals(statInfos)](#MssqlStatsParser+calculateIOTotals) ⇒ <code>StatsInfoTotal</code>
-
 <a name="MssqlStatsParser+parseStatistics"></a>
 
 ### mssqlStatsParser.parseStatistics(statisticsText) ⇒ <code>StatsSummary</code>
@@ -41,17 +39,6 @@ Parses a mssql statistics blob and returns a structured response
 | Param | Type | Description |
 | --- | --- | --- |
 | statisticsText | <code>string</code> | text blob of mssql statistics output |
-
-<a name="MssqlStatsParser+calculateIOTotals"></a>
-
-### mssqlStatsParser.calculateIOTotals(statInfos) ⇒ <code>StatsInfoTotal</code>
-Aggregates and summarizes parsed IO statistics
-
-**Kind**: instance method of [<code>MssqlStatsParser</code>](#MssqlStatsParser)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| statInfos | <code>Array.&lt;StatsIOInfo&gt;</code> | parsed IO statistics rows |
 
 <a name="determineRowType"></a>
 
@@ -88,4 +75,15 @@ Processes statistics IO data for a table row
 | --- | --- | --- |
 | row | <code>string</code> | the row of statistics output to process |
 | descriptor | <code>object</code> | contains metadata about the structure of statistics output |
+
+<a name="calculateIOTotals"></a>
+
+## calculateIOTotals(statInfos) ⇒ <code>StatsInfoTotal</code>
+Aggregates and summarizes parsed IO statistics
+
+**Kind**: global function  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| statInfos | <code>Array.&lt;StatsIOInfo&gt;</code> | parsed IO statistics rows |
 
