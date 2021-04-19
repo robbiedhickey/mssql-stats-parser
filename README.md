@@ -23,7 +23,7 @@ $ npm run docs
 The API surface area of this library is intentionally small, the parser has one function called `parseStatistics` that accepts a statistics blob and returns a formatted result.
 
 ```js
-import parser from 'mssql-stats-parser'
+const { parser } = require('mssql-stats-parser')
 
 let statsText = someFunctionThatReturnsStatistics()
 let statsSummary = parser.parseStatistics(statsText)
