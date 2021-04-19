@@ -3,7 +3,7 @@ lib
 tests
 docs
 .github
-.travis
+.travis.yml
 README.md
 
 # Logs
