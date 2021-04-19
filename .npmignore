@@ -1,6 +1,6 @@
 # uncompiled source
 lib
-test
+tests
 docs
 
 # Logs
